@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wrapper</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="wrapper.css">
+</head>
+<body>
+    <div class="info">
+        <h1>Alap tartalom, ha nem formázunk rajta semmit.</h1>
+        <pre>&lt;div class="tartalom"&gt;...&lt;/div&gt;</pre>
+        <pre>.tartalom {
+    background: #2C3E50;
+    color: #fff;
+}</pre>
+        <p>A tartalom ÉS a háttér széltől szélig ér.</p>
+    </div>
+    <div id="base" class="base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere venenatis ante, eu mollis felis faucibus et. Suspendisse potenti. Duis quam massa, consectetur sit amet consequat eget, pellentesque ut lectus. Pellentesque finibus condimentum tincidunt. Nam velit turpis, lobortis sed diam id, interdum tincidunt mi. Donec ut nisl sit amet purus facilisis dapibus. Vivamus tristique risus sed ligula feugiat, eu luctus lacus lacinia. Aliquam erat volutpat. Mauris at urna metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ultricies ante sed leo molestie pulvinar. Ut et malesuada sem. Proin et aliquam diam. Duis eget ipsum tincidunt, sagittis turpis et, auctor justo. Suspendisse mollis dignissim est, viverra porta nulla pharetra a. Ut a massa venenatis, tempus urna a, ultricies libero.
+        Nullam vitae pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum eu semper justo. Aliquam porta nisi sit amet orci mattis venenatis. Etiam rhoncus elementum elit non aliquet. Curabitur dolor ante, facilisis et nunc rutrum, dictum eleifend arcu. Proin dapibus sem in malesuada eleifend. Fusce ullamcorper ipsum tellus, et finibus risus dapibus in. Nullam non aliquam erat. Duis sit amet nibh at justo ullamcorper blandit.
+    </div>
+
+
+    <div class="info">
+        <h1>Fix szélességet adunk meg</h1>
+        <pre>&lt;div class="tartalom"&gt;...&lt;/div&gt;</pre>
+        <pre>.tartalom {
+    background: #2C3E50;
+    color: #fff;
+    <span>width: 700px;</span>
+}</pre>
+        <p>A tartalom fix szélességű lesz, de nincs középen, és a háttér nem ér végig! Egyszerűen "levágásra kerül".</p>
+    </div>
+    <div id="fix-width" class="base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere venenatis ante, eu mollis felis faucibus et. Suspendisse potenti. Duis quam massa, consectetur sit amet consequat eget, pellentesque ut lectus. Pellentesque finibus condimentum tincidunt. Nam velit turpis, lobortis sed diam id, interdum tincidunt mi. Donec ut nisl sit amet purus facilisis dapibus. Vivamus tristique risus sed ligula feugiat, eu luctus lacus lacinia. Aliquam erat volutpat. Mauris at urna metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ultricies ante sed leo molestie pulvinar. Ut et malesuada sem. Proin et aliquam diam. Duis eget ipsum tincidunt, sagittis turpis et, auctor justo. Suspendisse mollis dignissim est, viverra porta nulla pharetra a. Ut a massa venenatis, tempus urna a, ultricies libero.
+        Nullam vitae pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum eu semper justo. Aliquam porta nisi sit amet orci mattis venenatis. Etiam rhoncus elementum elit non aliquet. Curabitur dolor ante, facilisis et nunc rutrum, dictum eleifend arcu. Proin dapibus sem in malesuada eleifend. Fusce ullamcorper ipsum tellus, et finibus risus dapibus in. Nullam non aliquam erat. Duis sit amet nibh at justo ullamcorper blandit.
+    </div>
+
+
+    <div class="info">
+        <h1>Szélesség + középre igazítás</h1>
+        <pre>&lt;div class="tartalom"&gt;...&lt;/div&gt;</pre>
+        <pre>.tartalom {
+    background: #2C3E50;
+    color: #fff;
+    <span>width: 700px;
+    margin: 0 auto;</span>
+}</pre>
+        <p>A tartalom középen van, de a háttér egyszerűen nem ér végig.</p>
+    </div>
+    <div id="fix-width-and-center" class="base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere venenatis ante, eu mollis felis faucibus et. Suspendisse potenti. Duis quam massa, consectetur sit amet consequat eget, pellentesque ut lectus. Pellentesque finibus condimentum tincidunt. Nam velit turpis, lobortis sed diam id, interdum tincidunt mi. Donec ut nisl sit amet purus facilisis dapibus. Vivamus tristique risus sed ligula feugiat, eu luctus lacus lacinia. Aliquam erat volutpat. Mauris at urna metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ultricies ante sed leo molestie pulvinar. Ut et malesuada sem. Proin et aliquam diam. Duis eget ipsum tincidunt, sagittis turpis et, auctor justo. Suspendisse mollis dignissim est, viverra porta nulla pharetra a. Ut a massa venenatis, tempus urna a, ultricies libero.
+        Nullam vitae pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum eu semper justo. Aliquam porta nisi sit amet orci mattis venenatis. Etiam rhoncus elementum elit non aliquet. Curabitur dolor ante, facilisis et nunc rutrum, dictum eleifend arcu. Proin dapibus sem in malesuada eleifend. Fusce ullamcorper ipsum tellus, et finibus risus dapibus in. Nullam non aliquam erat. Duis sit amet nibh at justo ullamcorper blandit.
+    </div>
+
+    <div class="info">
+        <h1>A megoldás, hogy a hátteret és a tartalmat KÜLÖN-KÜLÖN szabályozzuk!</h1>
+        <pre>&lt;div class="befoglalo"&gt;      <span><-- Ennek adunk meg háttérszínt, és mást nem</span>
+    &lt;div class="tartalom"&gt;   <span><-- Ennek adjuk meg a szélességet és igazítjuk középre</span>
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        <pre>.befoglalo {
+    <span>background: #2C3E50;</span>
+    color: #fff;
+}
+
+.tartalom {
+    <span>width: 700px;
+    margin: 0 auto;</span>
+}</pre>
+        <p>Na, amit itt most <strong>.tartalom</strong>, azt hívjuk <strong>wrapper</strong>-nek</p>
+    </div>
+    <div id="hatter" class="base">
+        <div class="szoveg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere venenatis ante, eu mollis felis faucibus et. Suspendisse potenti. Duis quam massa, consectetur sit amet consequat eget, pellentesque ut lectus. Pellentesque finibus condimentum tincidunt. Nam velit turpis, lobortis sed diam id, interdum tincidunt mi. Donec ut nisl sit amet purus facilisis dapibus. Vivamus tristique risus sed ligula feugiat, eu luctus lacus lacinia. Aliquam erat volutpat. Mauris at urna metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ultricies ante sed leo molestie pulvinar. Ut et malesuada sem. Proin et aliquam diam. Duis eget ipsum tincidunt, sagittis turpis et, auctor justo. Suspendisse mollis dignissim est, viverra porta nulla pharetra a. Ut a massa venenatis, tempus urna a, ultricies libero.
+        Nullam vitae pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum eu semper justo. Aliquam porta nisi sit amet orci mattis venenatis. Etiam rhoncus elementum elit non aliquet. Curabitur dolor ante, facilisis et nunc rutrum, dictum eleifend arcu. Proin dapibus sem in malesuada eleifend. Fusce ullamcorper ipsum tellus, et finibus risus dapibus in. Nullam non aliquam erat. Duis sit amet nibh at justo ullamcorper blandit.
+        </div>
+    </div>
+
+
+    <div class="info">
+        <h1>Valós példa</h1>
+        <pre>&lt;div class="content1"&gt;      <span><-- Ennek adunk meg háttérszínt, és mást nem</span>
+    &lt;div class="wrapper"&gt;   <span><-- Ennek adjuk meg a szélességet és igazítjuk középre</span>
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="content3"&gt;      <span><-- Ennek adunk meg háttérszínt, és mást nem</span>
+    &lt;div class="wrapper"&gt;   <span><-- Ennek adjuk meg a szélességet és igazítjuk középre</span>
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="content2"&gt;      <span><-- Ennek adunk meg háttérszínt, és mást nem</span>
+    &lt;div class="wrapper"&gt;   <span><-- Ennek adjuk meg a szélességet és igazítjuk középre</span>
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+        <pre>.wrapper {
+    <span>width: 700px;
+    margin: 0 auto;</span>
+}
+
+<span>/* Itt már csak a tartalmakra vonatkozó eltérő beállításokat adjuk meg */</span>
+.content1 {
+    background: #2C3E50;
+    color: #fff;
+}
+.content2 {
+    background: #fff;
+    color: #000;
+}
+.content3 {
+    background: #18BC9C;
+    color: #fff;
+}</pre>
+    </div>
+    <div class="content1">
+        <div class="wrapper">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere venenatis ante, eu mollis felis faucibus et. Suspendisse potenti. Duis quam massa, consectetur sit amet consequat eget, pellentesque ut lectus. Pellentesque finibus condimentum tincidunt. Nam velit turpis, lobortis sed diam id, interdum tincidunt mi. Donec ut nisl sit amet purus facilisis dapibus. Vivamus tristique risus sed ligula feugiat, eu luctus lacus lacinia. Aliquam erat volutpat. Mauris at urna metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ultricies ante sed leo molestie pulvinar. Ut et malesuada sem. Proin et aliquam diam. Duis eget ipsum tincidunt, sagittis turpis et, auctor justo. Suspendisse mollis dignissim est, viverra porta nulla pharetra a. Ut a massa venenatis, tempus urna a, ultricies libero.
+        Nullam vitae pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum eu semper justo. Aliquam porta nisi sit amet orci mattis venenatis. Etiam rhoncus elementum elit non aliquet. Curabitur dolor ante, facilisis et nunc rutrum, dictum eleifend arcu. Proin dapibus sem in malesuada eleifend. Fusce ullamcorper ipsum tellus, et finibus risus dapibus in. Nullam non aliquam erat. Duis sit amet nibh at justo ullamcorper blandit.
+        </div>
+    </div>
+    <div class="content2">
+        <div class="wrapper">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere venenatis ante, eu mollis felis faucibus et. Suspendisse potenti. Duis quam massa, consectetur sit amet consequat eget, pellentesque ut lectus. Pellentesque finibus condimentum tincidunt. Nam velit turpis, lobortis sed diam id, interdum tincidunt mi. Donec ut nisl sit amet purus facilisis dapibus. Vivamus tristique risus sed ligula feugiat, eu luctus lacus lacinia. Aliquam erat volutpat. Mauris at urna metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ultricies ante sed leo molestie pulvinar. Ut et malesuada sem. Proin et aliquam diam. Duis eget ipsum tincidunt, sagittis turpis et, auctor justo. Suspendisse mollis dignissim est, viverra porta nulla pharetra a. Ut a massa venenatis, tempus urna a, ultricies libero.
+            Nullam vitae pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum eu semper justo. Aliquam porta nisi sit amet orci mattis venenatis. Etiam rhoncus elementum elit non aliquet. Curabitur dolor ante, facilisis et nunc rutrum, dictum eleifend arcu. Proin dapibus sem in malesuada eleifend. Fusce ullamcorper ipsum tellus, et finibus risus dapibus in. Nullam non aliquam erat. Duis sit amet nibh at justo ullamcorper blandit.
+        </div>
+    </div>
+    <div class="content3">
+        <div class="wrapper">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam posuere venenatis ante, eu mollis felis faucibus et. Suspendisse potenti. Duis quam massa, consectetur sit amet consequat eget, pellentesque ut lectus. Pellentesque finibus condimentum tincidunt. Nam velit turpis, lobortis sed diam id, interdum tincidunt mi. Donec ut nisl sit amet purus facilisis dapibus. Vivamus tristique risus sed ligula feugiat, eu luctus lacus lacinia. Aliquam erat volutpat. Mauris at urna metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ultricies ante sed leo molestie pulvinar. Ut et malesuada sem. Proin et aliquam diam. Duis eget ipsum tincidunt, sagittis turpis et, auctor justo. Suspendisse mollis dignissim est, viverra porta nulla pharetra a. Ut a massa venenatis, tempus urna a, ultricies libero.
+        Nullam vitae pulvinar ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum eu semper justo. Aliquam porta nisi sit amet orci mattis venenatis. Etiam rhoncus elementum elit non aliquet. Curabitur dolor ante, facilisis et nunc rutrum, dictum eleifend arcu. Proin dapibus sem in malesuada eleifend. Fusce ullamcorper ipsum tellus, et finibus risus dapibus in. Nullam non aliquam erat. Duis sit amet nibh at justo ullamcorper blandit.
+        </div>
+    </div>
+</body>
+</html>
