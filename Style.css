@@ -72,7 +72,7 @@ table {
 .top .menu{
     float: right;
 }
-li {
+.menu li {
     display: inline-block;
     font-family: Montserrat,Helvetica,Arial,sans-serif;
     font-weight: 900;
@@ -124,19 +124,47 @@ hr {
 }
 .class{
     background:  #2C3E50;
-    height: 400px;
+    height: 270px;
     color: white;
     font-family: Montserrat,Helvetica,Arial,sans-serif;
-    font-weight: bold;
 }
 .class2{
     width: 800px;
     padding:  0 325px 15px;
+    font-weight: 900;
 }
 .class2 li {
     font-size: 18px;
     padding: 90px 46px 0;
+    display: inline-block;
 }
-.class3{
-
+.class3 {
+    margin: 10px 340px 0;
+    display: inline-block;
+    width: 179px;
+    float: left;
+    line-height: 23px;
+}
+.class4{
+    margin: -25px 582px ;
+    float: left;
+}
+.class4 li {
+    display: inline-block;
+    width: 25px;
+}
+.class5 {
+    width: 329px;
+    margin: -68px 228px 10px 10px;
+    float: right;
+    line-height: 23px;
+}
+.copy{
+    background: #233140;
+    height: 45px;
+    width: 100%;
+}
+.copy h5{
+    color: white;
+    padding: 17px 570px 0px;
 }
